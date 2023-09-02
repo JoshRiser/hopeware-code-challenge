@@ -17,4 +17,3 @@ const Routes = [
 ]
 
 export default Routes
-export const getRoute = (path) => { return Routes.filter((route) => route.path == path)[0] }

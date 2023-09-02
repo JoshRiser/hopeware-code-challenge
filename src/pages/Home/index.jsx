@@ -8,7 +8,7 @@ function Home() {
     if(!latestComic) {
       fetch('https://xkcd.now.sh/?comic=latest').then(response => response.json()).then(data => setLatestComic(data))
     }
-  }, [])
+  }, [latestComic])
   return (
     <>
       {latestComic ? <Comic comic={latestComic} /> : <Loader />}

@@ -1,5 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames'
+
+Comic.propTypes = {
+  comic: PropTypes.object,
+}
 
 function Comic({comic}) {
   const [loaded, setLoaded] = useState(false)

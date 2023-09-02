@@ -1,10 +1,10 @@
 import { useLocation, Outlet } from 'react-router-dom';
-import Routes, { getRoute } from './Routes'
+import Routes from './Routes'
 import classnames from 'classnames'
 
 function Layout() {
   const location = useLocation();
-  const currentRoute = getRoute(location.pathname)
+  const currentRoute = Routes.filter((route) => route.path == location.pathname)[0]
   return (
     <>
       <nav role="menu">
