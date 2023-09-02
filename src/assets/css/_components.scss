@@ -1,0 +1,54 @@
+.loader {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  .loader-spinner {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 5px solid transparent;
+    border-top-color: #796be1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+  }
+  .loader-text { color: #796be1; }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+.comic {
+  display: flex;
+  column-gap: 10px;
+  opacity: 0;
+  .comic-image {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    object-fit: contain;
+  }
+  .comic-details {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    row-gap: 15px;
+    min-width: 250px;
+    background: #f5f5f5;
+    padding: 30px;
+    padding-right: 60px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    .details-num {
+      align-self: flex-start;
+      background: #796be1;
+      color: #fff;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+  }
+  &--loaded { opacity: 1; }
+}

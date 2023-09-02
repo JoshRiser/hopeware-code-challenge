@@ -1,0 +1,13 @@
+body, html { height: 100%; }
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: 'Poppins', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to bottom right, #796be1, #5523e8);
+  color: #333;
+}
+
+a { text-decoration: none; color: #796be1; }
